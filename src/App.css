@@ -1,12 +1,175 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+
 .App {
   text-align: center;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+.burger-cont{
+  height:0;
+  transition:height 2s;
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
+  z-index:1;
+  display:none;
+}
+.navpills-pad {
+   padding: 0.5rem
+}
+.header{
+  position: fixed;
+  z-index:1;
+  top: 0;
+}
+.auth{
+  display:block;
+}
+.hamburger{
+  display:none;
+}
+.header-text{
+  font-family: 'Roboto Slab', serif;
+}
+.spin{
 
+  margin:4rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+.login-wrapper,.register-wrapper,.account-w{
+  width:40%;
+}
+.footer,.reply-sect{
+  position: fixed;
+  bottom: 0;
+  padding: 3px 10px;
+  padding-bottom: 0;
+  border-top: 1px solid dimgray;
+  display:none;
+}
+
+.div .div2{
+  visibility: hidden;
+  opacity:0;
+  transition: opacity 0.3s;
+  position:absolute;
+  z-index:1;
+  padding:1rem;
+  right:10px;
+  top:10px;
+}
+.div:hover .div2{
+  visibility: visible;
+  opacity: 1;
+}
+.toolkit h6{
+  font-size:13px;
+}
+.replier,.reply{
+  font-size:13px;
+}
+.reply-sect{
+  z-index:1;
+}
+.profile-p{
+  padding: 2rem;
+}
+
+.profile-navpills, .aliceBg{
+  background-color: ghostwhite;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: red;
+  border-bottom:3px solid red;
+  background-color: ghostwhite;
+}
+.add-st{
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.profileBg{
+  background-color: ghostwhite;
+  height: 100vh;
+}
+.profile{
+  width:50%;
+}
+.about,.about-date{
+  font-size: 12px;
+}
+.comment-inp{
+  border-right: aliceblue;
+  border-top: aliceblue;
+  border-left: aliceblue
+}
+.email{
+  font-size:12px;
+}
+.less{
+  color: darkgray;
+  font-size:10px;
+}
+.notification{
+  font-size: 12px;
+}
+.profile-d{
+  width: 10%;
+}
+.status-inp{
+  height:5rem;
+  background-color:ghostwhite;
+  border:white;
+  padding:1rem
+}
+.reaction{
+  border-top: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+}
+.post{
+  font-size: 15px;
+  font-weight: 400;
+  
+}
+.bimbo{
+  margin-left: 1rem;
+}
+.poster{
+  color:blue;
+  font-size: 13px;
+  margin-bottom: 0rem;
+}
+.bg-magenta{
+  background-color: purple;
+  color:white;
+}
+.bg-blueviolet{
+  background-color: blueviolet;
+  color:white;
+}
+.post-image{
+  border-radius: 50px;
+}
+.text-magenta{
+  color:darkmagenta;
+}
+.profile-info{
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.head-btn{
+  color: purple;
+}
+.links{
+  display: flex;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -35,4 +198,52 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@media only screen and (min-width:320px) and (max-width:768px){
+  .profile-d{
+  width: 20%;
+}
+  .burger-cont{
+    display: block;
+  }
+  .auth{
+    display: none;
+  }
+  .hamburger{
+    display: block;
+  }
+  .footer{
+    display:flex;
+  }
+  .we{
+    font-size: 12px;
+  }
+  .links{
+    display: none;
+  }
+  .login-wrapper,.register-wrapper,.account-w{
+    width:100%;
+}
+.head-btn{
+  font-size: 12px;
+}
+.profile {
+  width: 100%;
+}
+.foot{
+  font-size: 13px;
+}
+.profile-info{
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.bimbo{
+  margin-left: 0;
+}
+.navpills-pad{
+  font-size: 10px;
+  padding: 0.2rem 0;
+}
 }
